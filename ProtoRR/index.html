@@ -13,7 +13,9 @@
 			<div>
 				<h2>Options Box</h2><br>
 				<p>Please Select a multi-line csv style file to load</p><br>
-				<input type="file" id="loadFileButton"><br>
+				<input type="file" id="loadFileButton"><br><br>
+				<select id="listList" size=10></select><br><br>
+				<h3 id="selectedList">No list selected</h3>
 				<div id="modalCloseArea">
 					<a href="#close" class="close" title="close">CLOSE</a>
 				</div>
@@ -24,7 +26,7 @@
 		<div class="border">
 			<a id="openLink" href="#openModal">OPTIONS</a>
 			<div class="dummy"> </div>
-			<p>To use, load the multi-line csv file "words1-7.csv" using the options menu. Then open the console and use the following command, substituting 0 for whatever list, and 5 for whatever table width you want.<br>createTable(listsArray[0],5);<p>
+			<p>To use, load the multi-line csv file "words1-7.csv" using the options menu. Select which list you wish to load, and a table will be made.</p>
 			<table id="displayWords">
 		</div>
 		<script> window.onload = initialise</script>

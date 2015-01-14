@@ -24,6 +24,12 @@ td {
 	margin:1em;
 }
 
+#listList {
+	width:80%;
+	margin-left:10%;
+	
+}
+
 div.dummy {
 	clear:both;
 }
@@ -69,7 +75,7 @@ div.border {
 }
 
 .modalDialog > div {
-	width: 400px;
+	width: 50%;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
