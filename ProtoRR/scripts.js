@@ -22,6 +22,7 @@ function createTable(inputArray,tableWidth) {
 		}
 		newCell = newRow.insertCell(-1);
 		newCell.innerHTML = inputArray[wordCount];
+		console.log(newCell.innerHTML);
 	}
 };
 
@@ -66,3 +67,10 @@ var initialise = function () {
 	"use strict";
 	document.getElementById("loadFileButton").addEventListener("change", fileChangedHandler);
 }
+
+var randomTest = function () {
+	"use strict";
+	var a = 6, b = 7;
+	a += b;
+	console.log(a);
+};
