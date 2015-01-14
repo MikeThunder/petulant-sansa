@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<script type="text/javascript" src="loadFile.js"></script>
-		<script type="text/javascript" src="tableDOM.js"></script>
+		<script type="text/javascript" src="scripts.js"></script>
 		<link rel="stylesheet" href="layout.css">
 		<title>Rocket Reading Prototype</title>
 	</head>
 	<body>
-		<input type="file" id="loadFileButton">
 		
-		<table id="displayWords">
+		
+		
+		<div id="openModal" class="modalDialog">
+			<div>
+				<h2>Options Box</h2><br>
+				<p>Please Select a multi-line csv style file to load</p><br>
+				<input type="file" id="loadFileButton"><br>
+				<div id="modalCloseArea">
+					<a href="#close" class="close" title="close">CLOSE</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="border">
+			<a id="openLink" href="#openModal">OPTIONS</a>
+			<div class="dummy"> </div>
+			<p>To use, load the multi-line csv file "words1-7.csv" using the options menu. Then open the console and use the following command, substituting 0 for whatever list, and 5 for whatever table width you want.<br>createTable(listsArray[0],5);<p>
+			<table id="displayWords">
+		</div>
 		<script> window.onload = initialise</script>
 	</body>
 </html>
